@@ -56,7 +56,6 @@ const SPECIALS = '@$%!*#?&.';
 const LOWER_LETTER = UPPER_LETTER.toLowerCase();
 const NUMBERS = '0123456789';
 
-
 const passwordCheck = (password,repassword)=>{
     let match = false;
     let containsUpper = false;
