@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str1 = 'string';
+        const str2 = "string";
+        const str3 = `string`;
+
+        const message = str1+str2+str3;
+        console.log(message);
+        const message1 = `${str1} everyone ${str2} ${str3}`;
+        console.log(message1);
+        console.log(str1.length);
+        console.log(str1.toUpperCase());
+
+        /*const prompt1 = prompt('too oruulna uu');
+        const prompt2 = prompt('too oruulna uu');
+        console.log(Number(prompt1)+ Number(prompt2));
+
+        const prompt3 = prompt('too oruulna uu');
+        const prompt4 = prompt('too oruulna uu');
+        console.log(Math.round(Math.random()* (str.substring(Number(prompt3), Number(prompt4)))));
+        */
+       
+        //new katet gipo
+        let a=3, b=4;
+        console.log(Math.sqrt((a**2)+Math.pow(b,2)));
+
+
+        //Nearest number
+        let n=8.3243627946982;
+        console.log(Math.round(n));
+
+
+        //simple assignment 0-100 hurtel
+        console.log(Math.round(Math.random() * 100));
+        // 50-255 hurtel random
+        console.log(Math.round(Math.random() * 205) + 50);
+
+
+        //random number between 
+        /*let A = prompt('ehnii too oruulna uu');
+        let B = prompt('suulchiin too oruulna uu');
+        console.log(Math.round(Math.random()* (Math.max(A,B) - Math.min(A,B))) + Math.min(A,B));
+
+        //numbers-sum
+        let m = prompt('3 orontoi too oruulah');
+        console.log((Math.floor(m / 100)) + Number(m.substr(1, 1)) + Number(m.substr(2, 1)));
+        
+        //validate phone number
+        let N = prompt('utasnii dugaar oruulna uu');
+       if(Number(N)){
+           if(Number("+976") === Number(N.substr(0, 4))) {
+             if(Number(N.length) === 12){
+                console.log('Та монгол улсын утасны дугаарыг зөв орууллаа');
+             }
+             else{
+                 console.log('Buruu utga baina')
+             }
+           }
+          else{
+              console.log('Buruu utga baina')
+          }
+       }*/
+       //register number validation
+       let R = prompt('TA registeriin dugaaraa oruulna uu'); 
+       let M = R.substr(0,2)
+       let B = R.substr(2,8)
+       if((R.length) === 10){
+            if(Number(M)=== NaN){
+                uconsole.log('mon bauna')
+            }
+            else{
+                console.log('bish bn');
+            }
+       }
+       else{
+           console.log('buruu utga baina')
+       }
+
+    </script>
+</body>
+</html>

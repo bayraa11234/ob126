@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 100px;
+    height: 50px;
+    background-color: #cccccc;
+    border-radius: 50px;
+    position: relative;
+    transition-duration: 0.5s;
+    border: 1px solid black;
+}
+.box:active{
+    background-color: blue;
+}
+.shape{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: #fff;
+    transition-duration: 0.5s;
+    transition-delay: 1s;
+}
+/* .shape:active{
+    left: 50px;
+} */
+
+.box:active .shape{
+    left: 50px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="helloText"></div>
+
+    <div class="dummy"></div>
+
+    <p id="demo"></p>
+
+    <div id="test"></div>
+
+    <button id="myBtn">Random color generator</button>
+
+    <script>
+        
+        // document.getElementById("helloText").innerHTML = "Hello world!";
+        //     const items = document.getElementsByClassName("dummy");
+        //     for (let i = 0; i < items.length; i++) {
+        //         items[i].innerHTML = `<b>Hello dummy div ${i + 1}</b>`;
+        //     }
+        //     documeny.getElementById("demo").innerHTML = "Date : " + Date();
+
+
+            // document.getElementById("test").style.color = "rgb(0,0,255)";
+            // document.getElementById("test").style.fontSize = "36px";
+
+
+            function changeBackgroundColor() {
+                myButton.style = "background-color: green"
+            }
+            // myButton.addEventListener("click", changeBackgroundColor())
+            myBtn.addEventListener("click", getRandomColor)
+
+            //randomooor backgroundiin ongo solih
+            function getRandomNumber(min, max) {
+                    return Math.floor(Math.random() * (max - min)) + min;
+            }
+            function getRandomColor(){
+            const green = getRandomNumber(0,255);
+            const red = getRandomNumber(0,255);
+            const blue = getRandomNumber(0,255);
+            const htmlTag = document.querySelector("html");
+            htmlTag.style.backgroundColor = `rgb(${red},${green},${blue})`;
+            myBtn.style.color = `rgb(${red},${green},${blue})`;
+            }
+    </script>
+    
+</body>
+</html>

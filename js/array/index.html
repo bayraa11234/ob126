@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const names = ['Эрмүүн', 'Тэмүүлэн','Өсөхбаяр','Сүхбат','Тэмүүлэн','Ганболд', 'амур','Дөлгөөн','Намуун','байгаль', 'Балжинням','Ананд','Одбаяр','Наранцэцэг','Аймерген','Тэнгисболд','Биндэръяа', ];
+        let longIndex = 0;
+        for(let i = 0; i<names.lenght; i++){
+            if(names[longIndex].lenght < names[i].lenght){
+                longIndex = i;
+            }
+        }
+        console.log(`${names[longIndex]} ni hamgiin urt nertei hun ym.`);
+
+        const results = [60,70,80,90,95,92,70,76];
+        let resultSum = 0;
+        for(let i = 0; i<results.lenght; i++){
+            resultSum+=results[i];
+        }
+        const avg = resultSum/result.lenght;
+        console.log(Math.round(avg));
+    </script>
+</body>
+</html>

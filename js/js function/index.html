@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pyramid(rowLenght){
+            let result = '';
+            for(let i = 1; i<=rowLenght; i++){
+                for(let j = 0; j<rowLenght-i; j++){
+                    result +=' ';
+                }
+                for (let j = 0; j < i; j++) {
+                    result += '* ';
+                }
+                result+='\n';
+            }
+            console.log(result);
+        }
+
+        pyramid(10);
+
+        //registerein dugaaraar on sar odor huis oloh
+
+        // function niit(register){
+        //     let eu = register.substr(0,1);
+        //     let su = register.substr(1,1);
+        //     let on = register.substr(2,2);
+        //     let odor = register.substr(4, 2);
+        //     let sar = register.substr(6,2);
+        //     let h = register.substr(8,1);
+        //     let odr = odor - 20;
+
+        //     if(odor>20){
+        //         if (h % 2 === 1) {
+        //             console.log(`20${on} onii ${odr} sariin ${sar}   'eregtei'`);
+        //         }
+        //         else {
+        //             console.log(`20${on} onii ${odr} sariin ${sar} 'emegtei'`);
+        //         }
+        //     }
+        //     else if(odor<20){
+        //         if (h % 2 === 1) {
+        //             console.log(`19${on} onii ${odor} sariin ${sar} 'eregtei'`);
+
+        //         }
+        //         else {
+        //             console.log(`19${on} onii ${odor} sarin ${sar} 'emegtei'`);
+        //         }
+        //     }
+        //     }
+
+
+        // let a = prompt('registeriin dugaar');
+        // niit(a);
+        // new random 
+
+    </script>
+</body>
+</html>
